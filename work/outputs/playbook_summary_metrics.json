@@ -1,0 +1,20 @@
+{
+  "total_content_items": 30000,
+  "base_rate_declining": 0.5421,
+  "action_distribution": {
+    "monitor": 17876,
+    "refresh_and_review_ctr": 9741,
+    "refresh": 2301,
+    "expand_and_refresh": 82
+  },
+  "precision_metrics": {
+    "precision_at_20": 1.0,
+    "precision_at_50": 1.0,
+    "precision_at_100": 1.0,
+    "precision_at_500": 0.978
+  },
+  "scoring_weights": {
+    "model_prob_weight": 0.7,
+    "rule_score_weight": 0.3
+  }
+}
