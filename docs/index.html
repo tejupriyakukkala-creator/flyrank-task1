@@ -278,6 +278,17 @@
             color: #991b1b;
         }
 
+        .quote-box {
+            background-color: #f1f5f9;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            margin: 20px 0;
+            font-size: 0.98rem;
+            color: #334155;
+            line-height: 1.6;
+        }
+
         /* Figures */
         .figure-container {
             margin: 28px 0;
@@ -338,34 +349,6 @@
             text-decoration: underline;
         }
 
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background-color: var(--primary);
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: var(--radius-md);
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: background-color 0.2s;
-        }
-
-        .btn:hover {
-            background-color: var(--primary-hover);
-            text-decoration: none;
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .btn-outline:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
         footer {
             background-color: #0f172a;
             color: #94a3b8;
@@ -385,9 +368,9 @@
     <!-- Header Banner -->
     <header class="header-banner">
         <div class="header-content">
-            <span class="badge-tag">FlyRank Capstone Research Paper</span>
+            <span class="badge-tag">FlyRank Capstone Research Paper & Case Study</span>
             <h1 class="paper-title">Automated SEO Traffic Decline Mitigation: A Client-Grouped Machine Learning Approach for Actionable Content Prioritization</h1>
-            <p class="paper-subtitle">Rigorous Empirical Evaluation, Feature Leakage Prevention, and Action Playbook Allocation on Enterprise Search Portfolios</p>
+            <p class="paper-subtitle">Empirical Evaluation, Feature Leakage Prevention, and Action Playbook Allocation on Enterprise Search Portfolios</p>
             <div class="paper-meta">
                 <div class="meta-item"><strong>Author:</strong> Machine Learning Engineering Intern</div>
                 <div class="meta-item"><strong>Dataset Credit:</strong> <a href="https://flyrank.ai" target="_blank" style="color: #60a5fa; text-decoration: underline;">FlyRank.ai</a></div>
@@ -404,7 +387,7 @@
         <section class="card card-abstract">
             <h2 style="font-size: 1.4rem; color: #1e3a8a; margin-bottom: 12px; font-weight: 700;">Executive Abstract</h2>
             <p>
-                Organic search traffic decay represents a severe multi-million-dollar vulnerability for modern digital enterprise portfolios. 
+                Organic search traffic decay represents a severe multi-million-dollar vulnerability for modern digital enterprise portfolios managed by <a href="https://flyrank.ai" target="_blank">FlyRank</a>. 
                 Traditional heuristic rules (e.g., static thresholding on click-through rate decay) suffer from high false-positive rates and fail to generalize across heterogeneous domain verticals. 
                 In this capstone study, we present a machine learning framework designed to detect organic traffic decay early and rank web pages into actionable operational buckets.
             </p>
@@ -437,24 +420,25 @@
             </div>
         </section>
 
-        <!-- Section 1: Research Question & Business Context -->
+        <!-- Section 1: Research Question & FlyRank Case Study Framing -->
         <section class="card">
-            <h2 class="section-heading"><span class="step-num">1</span> Research Question & Business Context</h2>
+            <h2 class="section-heading"><span class="step-num">1</span> Research Question & FlyRank Case Study Framing</h2>
             <p>
-                Enterprise content portfolios often encompass tens or hundreds of thousands of published URLs. Over time, search engine algorithm updates, evolving user query intent, decaying backlink profiles, and content obsolescence cause organic impressions and clicks to erode. 
+                Enterprise content portfolios managed by <a href="https://flyrank.ai" target="_blank">FlyRank</a> encompass tens or hundreds of thousands of published URLs. Over time, search engine algorithm updates, evolving user query intent, decaying backlink profiles, and content obsolescence cause organic impressions and clicks to erode. 
                 Remediating declining content requires costly editorial intervention (rewriting content, updating facts, or consolidating thin pages). Consequently, engineering teams need a reliable decision-support system to answer the core research question:
             </p>
             <div class="alert alert-info">
                 <strong>Core Research Question:</strong> Can a machine learning model reliably identify and prioritize high-decline web pages across unseen client domains, operating strictly under zero-leakage constraints to maximize editorial ROI?
             </div>
-            <h3 class="subsection-heading">Decision-Support Paradigm</h3>
+            <h3 class="subsection-heading">FlyRank Content Refresh Framing</h3>
             <p>
+                This work directly addresses FlyRank's operational challenge of allocating human content strategists efficiently. 
                 Rather than attempting fully automated content generation (which carries severe hallucination and brand safety risks), our model operates strictly as a <strong>decision-support prioritization engine</strong>. 
-                It emits rank-ordered recommendation queues accompanied by clear reason codes (e.g., <code>RC_CTR_DECAY</code>, <code>RC_POSITION_SLIP</code>, <code>RC_HIGH_STALENESS</code>) so that human content strategists can review high-confidence candidates efficiently.
+                It emits rank-ordered recommendation queues accompanied by clear reason codes (e.g., <code>RC_CTR_DECAY</code>, <code>RC_POSITION_SLIP</code>, <code>RC_HIGH_STALENESS</code>) so that content teams can review high-confidence candidates efficiently in public-safe compliance.
             </p>
         </section>
 
-        <!-- Section 2: Data Architecture & Preprocessing -->
+        <!-- Section 2: Data Architecture & Feature Engineering -->
         <section class="card">
             <h2 class="section-heading"><span class="step-num">2</span> Data Architecture & Feature Engineering</h2>
             <p>
@@ -731,9 +715,76 @@
             </ul>
         </section>
 
-        <!-- Section 8: Reproducibility & Open Science -->
+        <!-- Section 8: 5-Minute Technical Demo Outline & Shareable Summaries -->
         <section class="card">
-            <h2 class="section-heading"><span class="step-num">8</span> Reproducibility & Artifact Receipts</h2>
+            <h2 class="section-heading"><span class="step-num">8</span> 5-Minute Technical Demo & Shareable Cuts</h2>
+            <p>
+                To support live demonstrations, technical interviews, and stakeholder presentations, we provide a 5-minute structured demo script alongside two public-safe shareable summaries (also available in <code>work/case_study_and_demo.md</code>).
+            </p>
+
+            <h3 class="subsection-heading">5-Minute Live Technical Demo Agenda</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time Slot</th>
+                            <th>Demo Focus & Artifact</th>
+                            <th>Key Script & Presentation Goal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>0:00 - 1:00</strong></td>
+                            <td>Problem Framing & FlyRank Data Context</td>
+                            <td>Explain the cost tension of false positives from heuristic rules across 30,000 enterprise pages.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>1:00 - 2:00</strong></td>
+                            <td>Leakage Audit & Grouped Split Design</td>
+                            <td>Demonstrate <code>trend_pct</code> leakage (fake 1.0 AUC) and show the zero-leakage grouped client split fix.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2:00 - 3:00</strong></td>
+                            <td>Empirical Model Lift vs Heuristic Rule</td>
+                            <td>Present Precision@20 lift (95.0% vs 59.6%) on held-out client domains with precision-at-k charts.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3:00 - 4:00</strong></td>
+                            <td>Action Playbook & Reason Codes</td>
+                            <td>Show the 4 operational action queues and explain automated reason codes (e.g., <code>RC_CTR_DECAY</code>).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>4:00 - 5:00</strong></td>
+                            <td>Operational Limits, SLAs & Retraining</td>
+                            <td>Highlight explicit no-go guardrails, editorial 14-day SLAs, and quarterly retraining triggers.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="subsection-heading">Shareable Cut 1: Technical & Social Summary</h3>
+            <div class="quote-box">
+                <strong>Beating Static Heuristics: Zero-Leakage ML for Enterprise SEO Traffic Remediation</strong><br><br>
+                How do you prioritize content refreshes across a 30,000-page enterprise portfolio without wasting editorial budget on false positives? Static rules like "flag if CTR drops 20%" fail because they don't scale across different client domain verticals.<br><br>
+                Working with dataset assets from <a href="https://flyrank.ai" target="_blank">FlyRank</a>, I built a gradient-boosted decision tree pipeline evaluated under a strict <strong>Client-Grouped Holdout Split</strong> (26 training client domains, 6 held-out test domains).<br><br>
+                • <strong>Precision Lift:</strong> Achieved <strong>95.0% Precision@20</strong> (vs 59.6% baseline rule), delivering a <strong>+59.4% relative precision lift</strong>.<br>
+                • <strong>Leakage Audit:</strong> Purged future-window metrics (<code>trend_pct</code>) that artificially inflate ROC-AUC to 1.0000.<br>
+                • <strong>Action Playbook:</strong> Categorized 30,000 pages into 4 auditable queues (4,772 rewrites, 2,301 refreshes, 1,029 deletes, 21,898 monitor actions) with human-auditable reason codes.<br><br>
+                🔗 Paper: <a href="https://tejupriyakukkala-creator.github.io/flyrank-task1/" target="_blank">https://tejupriyakukkala-creator.github.io/flyrank-task1/</a><br>
+                🔗 Code: <a href="https://github.com/tejupriyakukkala-creator/flyrank-task1" target="_blank">https://github.com/tejupriyakukkala-creator/flyrank-task1</a>
+            </div>
+
+            <h3 class="subsection-heading">Shareable Cut 2: Executive / Recruiter 3-Sentencer</h3>
+            <div class="quote-box">
+                1. <strong>What I Built:</strong> Developed an end-to-end machine learning prioritization system that detects organic search traffic decline and categorizes web pages into 4 actionable remediation queues for enterprise content portfolios.<br>
+                2. <strong>Data & Validation Rigor:</strong> Trained and evaluated models on a dataset of 30,000 pages across 32 anonymized enterprise client domains provided by <a href="https://flyrank.ai" target="_blank">FlyRank</a>, implementing a Client-Grouped Holdout Split to prevent spatial domain leakage and auditing out future-window metric leakage.<br>
+                3. <strong>Empirical Impact:</strong> Achieved a <strong>95.0% Precision@20</strong> and <strong>0.7698 ROC-AUC</strong> (+59.4% precision lift over standard heuristic rules), operationalizing model outputs with automated reason codes, editorial SLAs, and explicit no-go safety guardrails.
+            </div>
+        </section>
+
+        <!-- Section 9: Reproducibility & Open Science Artifacts -->
+        <section class="card">
+            <h2 class="section-heading"><span class="step-num">9</span> Reproducibility & Artifact Receipts</h2>
             <p>
                 In accordance with open science practices, all code, data processing scripts, notebook outputs, and metric receipts are committed directly to the public repository.
             </p>
@@ -747,6 +798,7 @@
                 <li><code>work/notebooks/w06_validation_audit.ipynb</code>: Client-grouped split & feature leakage audit.</li>
                 <li><code>work/notebooks/w07_action_playbook.ipynb</code>: Final Action Playbook queue & export.</li>
                 <li><code>work/notebooks/capstone.ipynb</code>: Master capstone notebook mirroring this paper.</li>
+                <li><code>work/case_study_and_demo.md</code>: Case study framing, demo outline & shareable cuts.</li>
             </ul>
 
             <h3 class="subsection-heading">Committed JSON Receipts</h3>
@@ -757,9 +809,9 @@ work/outputs/playbook_summary_metrics.json
 work/outputs/capstone_summary_metrics.json</code></pre>
         </section>
 
-        <!-- Section 9: Data Credit & Acknowledgments -->
+        <!-- Section 10: Data Credit & Acknowledgments -->
         <section class="card">
-            <h2 class="section-heading"><span class="step-num">9</span> Data Credit & Acknowledgments</h2>
+            <h2 class="section-heading"><span class="step-num">10</span> Data Credit & Acknowledgments</h2>
             <p>
                 We express our gratitude to <a href="https://flyrank.ai" target="_blank" style="font-weight: 700; color: var(--primary);">FlyRank.ai</a> for providing the anonymized enterprise search dataset, technical guidelines, and research framework for this capstone project.
             </p>
