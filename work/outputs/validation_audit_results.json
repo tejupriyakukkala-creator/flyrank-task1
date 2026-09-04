@@ -1,0 +1,22 @@
+[
+  {
+    "Split Strategy": "Naive Random Row Split",
+    "Test Base Rate": 0.542,
+    "Accuracy": 0.6913,
+    "ROC-AUC": 0.7554,
+    "PR-AUC": 0.7634,
+    "P@20": 0.95,
+    "P@50": 0.92,
+    "P@100": 0.88
+  },
+  {
+    "Split Strategy": "Client-Grouped Holdout (Honest)",
+    "Test Base Rate": 0.391,
+    "Accuracy": 0.652,
+    "ROC-AUC": 0.7648,
+    "PR-AUC": 0.6605,
+    "P@20": 0.9,
+    "P@50": 0.82,
+    "P@100": 0.82
+  }
+]
